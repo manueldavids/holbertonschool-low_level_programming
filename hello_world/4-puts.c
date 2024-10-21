@@ -1,9 +1,13 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point of the program
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
-	/* Prints axactly, followed by a new line */
-	puts("Programming is like building a multilingual puzzle\n");
-
+	puts("Programming is like building a multilingual puzzle");
 	return (0);
 }
