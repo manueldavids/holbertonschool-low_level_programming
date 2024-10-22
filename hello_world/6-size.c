@@ -15,4 +15,4 @@ int main(void)
     printf("Size of float: "%f" byte(s)\n", sizeof(float));
 
     return (0);
-
+}
