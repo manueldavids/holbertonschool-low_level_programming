@@ -5,7 +5,7 @@
 /**
  *  main - Checking if the digit is greater than, or equal to 0
  *
- *  Return Always 0.
+ *  Return: Always 0 (Success).
  */
 int main(void)
 {
