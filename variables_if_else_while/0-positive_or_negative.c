@@ -14,14 +14,8 @@ int main(void)
 
 	printf("%d possitive\n", n);
 }
-        if (n == 0)
+	if (n < 0)
 {
-
-	printf("%d cero\n", n);
-}
-	else  (n < 0)
-{
-
 	printf("%d negative\n", n);
 }
 	return (0);
