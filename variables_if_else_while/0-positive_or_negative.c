@@ -9,7 +9,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	while (n > 0)
+	if (n > 0)
 {
 
 	printf("%d possitive\n", n);
@@ -17,6 +17,10 @@ int main(void)
 	if (n < 0)
 {
 	printf("%d negative\n", n);
+}
+	if (n == 0)
+{
+	printf("%d cero\n", n);
 }
 	return (0);
 }
