@@ -19,7 +19,7 @@ int main(void)
 
 	printf("%d cero\n", n);
 }
-	else if (n < 0)
+	else  (n < 0)
 {
 
 	printf("%d negative\n", n);
