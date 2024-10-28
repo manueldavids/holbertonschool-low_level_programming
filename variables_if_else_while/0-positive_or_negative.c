@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- *  main - Checking if the digit is negative, positive or zero
+ *  main - Checking if the digit is greater than, or equal to 0
  *
- *  Return Always 0
+ *  Return Always 0.
  */
 int main(void)
 {
