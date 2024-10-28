@@ -12,7 +12,7 @@ int main(void)
 	if (n > 0)
 {
 
-	printf("%d possitive\n", n);
+	printf("%d positive\n", n);
 }
 	else if (n < 0)
 {
