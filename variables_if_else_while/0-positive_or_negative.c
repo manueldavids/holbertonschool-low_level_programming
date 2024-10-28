@@ -6,7 +6,7 @@
  *  main - Checking if the digit is negative, positive or zero
  *
  *  Return Always 0
- * */
+ */
 int main(void)
 {
 	int n;
