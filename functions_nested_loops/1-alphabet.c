@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * main - function that prints the alphabet in lowercase.
+ * print_alphabet - _putchar with print the lowercase abc.
  *
- * Return: Always 0.
+ * return: Always 0.
  */
 void print_alphabet(void)
 {
