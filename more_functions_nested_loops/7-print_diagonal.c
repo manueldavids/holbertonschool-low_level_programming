@@ -5,7 +5,7 @@
  * @n: int used to check
  *
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int a, b;
 
