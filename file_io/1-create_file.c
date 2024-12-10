@@ -1,48 +1,41 @@
 #include "main.h"
 
 /**
- * create_file - Creates a file with the specified content.
- * @filename: Pointer to the name of the file to be created.
- * @text_content: Pointer to the text content to write into the file.
- *
- * Description: This function creates a new file, or truncates an existing file,
- *              and writes the provided text content into it.
- *              The file will have permission 0600 (read/write for owner).
+ * create_file - Creates a file and writes content into it.
+ * @filename: Name of the file to create.
+ * @text_content: Content to write into the file.
  *
  * Return: 1 on success, -1 on failure.
  */
 int create_file(const char *filename, char *text_content)
 {
-	int i = 0, file; /* `i` is the length of the content, `file` is the file descriptor */
+	int i = 0, file;
 
-	/* Check if the filename is NULL, return -1 if it is */
+    /* Check if filename is NULL */
 	if (filename == NULL)
 		return (-1);
 
-	/* If text_content is NULL, treat it as an empty string */
+    /* If text_content is NULL, treat it as an empty string */
 	if (text_content == NULL)
 		text_content = "";
 
-	/* Calculate the length of the text_content */
+    /* Calculate the length of text_content */
 	while (text_content[i] != '\0')
-	{
 		i++;
-	}
 
-	/* Open the file for writing. Create it if it doesn't exist, truncate if it does */
+    /* Open the file (create or truncate) */
 	file = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
-	/* Check if the file failed to open, return -1 on failure */
+    /* Return -1 if the file cannot be opened */
 	if (file == -1)
 		return (-1);
 
-	/* Write the content to the file */
+    /* Write the content to the file */
 	write(file, text_content, i);
 
-	/* Close the file descriptor after writing */
+    /* Close the file */
 	close(file);
 
-	/* Return 1 to indicate success */
 	return (1);
 }
 
